@@ -7,17 +7,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="Description" content="Lección 2"/>
         <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <header id="encabezado">
-            <h1>Tienda en Línea</h1>
-            <br>
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="nav-link logo">Tienda en Linea</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Ejemplo9.html">&LeftTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Ejemplo1.html">&RightTriangleBar;</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="audios.html">Audios</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="videos.html">Videos</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="iframe.html">iFrame</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="formulario.html">Formularios</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav id="menu">
-            <a href="Ejemplo9.html">Atrás</a>
-            <a href="index.html">Home</a>
-            <a href="Ejemplo1.html">Adelante</a>
-        </nav>
         <aside id="barraLateral">
             <h2>Productos mas Vendidos</h2>
             <p> Texto genérico aqui xd </p>
@@ -28,23 +33,25 @@
                 <header>Asus Vivobook</header>
                 <p class="descripcion"><cite>Lorem ipsum dolor sit amet</cite> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <figure>
-                    <img src="images/laptop.jpg" alt="fast boi" width="100"/>
+                    <img src="images/laptop.jpg" alt="fast boi" width="200"/>
                     <figcaption>fast boi</figcaption>
+                    <br>
                 </figure>
             </article>
             <article>
                 <header>Alienware</header>
                 <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <figure>
-                    <img src="images/pc.jpg" alt="next gen" width="100"/>
+                    <img src="images/pc.jpg" alt="next gen" width="200"/>
                     <figcaption>next gen</figcaption>
+                    <br>
                 </figure>
             </article>
             <article>
                 <header>3d printer</header>
                 <p class="descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <figure>
-                    <img src="images/3d.jpg" alt="Totally reliable" width="100"/>
+                    <img src="images/3d.jpg" alt="Totally reliable" width="200"/>
                     <figcaption>Totally reliable</figcaption>
                 </figure>
             </article>
@@ -116,7 +123,7 @@
             </article>
 
         </section>
-        <footer>
+        <footer id="piePagina">
             Derechos Resevados &COPY; 2022 <address>Tibás, San Agustín</address>
         </footer>
     </body>
