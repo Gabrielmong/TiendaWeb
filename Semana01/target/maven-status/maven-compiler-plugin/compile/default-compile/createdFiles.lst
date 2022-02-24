@@ -1,0 +1,4 @@
+com\TiendaWeb\controller\IndexController.class
+com\TiendaWeb\dao\ClienteDao.class
+com\TiendaWeb\TiendaWebApplication.class
+com\TiendaWeb\domain\Cliente.class
