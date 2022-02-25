@@ -1,12 +1,13 @@
 <!doctype html>
 <html xmlns:th="https://www.thymeleaf.org">
     <head>
-        <title>TODO supply a title</title>
+        <title>Clientes</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>Salu2</div>
+        <header th:replace="layout/plantilla :: header"></header>
+        <!--<div>Salu2</div>
         <p th:text="${TextoSaludo}"></p>
 
         <h1>Cliente desde una clase</h1>
@@ -34,10 +35,13 @@
         </div>
         <div th:if="@{clientes == null or cliente.empty}">
             La lista está vacía
-        </div>
+        </div> -->
         
         <br>
         <h1>Clientes desde una lista</h1>
+        <br>
+        <a th:href="@{/nuevoCliente}">Nuevo Cliente</a>
+        
         <div th:if="@{clientesDB != null or !clienteDB.empty}">
             <table border="1">
                 <tr>
@@ -45,18 +49,22 @@
                     <td>Apellido</td>
                     <td>Correo</td>
                     <td>Telefono</td>
+                    <td>Modificar</td>
+                    <td>Eliminar</td>
                 </tr>
                 <tr th:each="item : ${clientesDB}">
                     <td th:text="${item.nombre}"></td>
                     <td th:text="${item.apellidos}"></td>
                     <td th:text="${item.correo}"></td>
                     <td th:text="${item.telefono}"></td>
+                    <td><a th:href="@{/modificarCliente/}+${item.idcliente}">Modificar</a></td>
+                    <td><a th:href="@{/eliminarCliente/}+${item.idcliente}">Eliminar</a></td>
                 </tr>
             </table>
         </div>
         <div th:if="@{clientesDB == null or cliente.empty}">
             La lista está vacía
         </div>
-        
+        <footer th:replace="layout/plantilla :: footer"></footer>
     </body>
 </html>
