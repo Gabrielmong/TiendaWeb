@@ -1,19 +1,28 @@
 <!DOCTYPE html>
-<html xmlns:th="https://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
     <head>
         <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">        
     </head>
     <body>
-        <header th:fragment="header">
-            <h1 style="color:#990099">TechShop</h1>
-            <br>
-            <a th:href="@{/}">Regresar</a>
+        <header th:fragment="header" class="header">
+            <nav class="nav">
+                <a th:href="@{/}" class="nav-link logo">Tech Shop</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link nav-link" th:href="@{/cliente/listado}">Clientes</a>
+                    </li> 
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link nav-link" th:href="@{/articulo/listado}">Articulos</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a class="nav-menu-link nav-link" th:href="@{/categoria/listado}">Categorias</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
-
-        <footer th:fragment="footer">
+        <footer th:fragment="footer" class="footer">
             &COPY; Derechos Reservados 2022
         </footer>
     </body>
