@@ -13,8 +13,10 @@ com\TiendaWeb\controller\IndexController.class
 com\TiendaWeb\domain\Articulo.class
 com\TiendaWeb\service\CategoriaService.class
 com\TiendaWeb\service\CategoriaServiceImpl.class
+com\TiendaWeb\SecurityConfig.class
 com\TiendaWeb\dao\ClienteDao.class
 com\TiendaWeb\TiendaWebApplication.class
 com\TiendaWeb\service\ArticuloServiceImpl.class
 com\TiendaWeb\controller\ClienteController.class
+com\TiendaWeb\WebConfig.class
 com\TiendaWeb\controller\CategoriaController.class

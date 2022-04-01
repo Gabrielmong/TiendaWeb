@@ -18,6 +18,7 @@ public class IndexController {
     public String inicio(Model model) {
         log.info("Ahora se usa arquitectura MVC");
 
+        
         var articulos = articuloService.getArticulos(true);
         
         model.addAttribute("articulos", articulos);
